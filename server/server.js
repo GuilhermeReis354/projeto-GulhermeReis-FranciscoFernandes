@@ -18,6 +18,11 @@ function save() {
   fs.writeFileSync(FICHEIRO, JSON.stringify(jogos, null, 2));
 }
 
+// GET /api/jogos -> 200 + array de itens
+app.get("/api/jogos", (req, res) => {
+  res.status(200).json(jogos);
+});
+
 app.listen(PORT, () => {
   console.log(`Servidor a correr em http://localhost:${PORT}`);
 });
