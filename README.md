@@ -1,5 +1,44 @@
 # projeto-GulhermeReis-FranciscoFernandes
 
+## Como correr a app
+
+É preciso ter o [Node.js](https://nodejs.org) instalado.
+
+### 1. Clonar o repositório
+
+```
+git clone https://github.com/GuilhermeReis354/projeto-GulhermeReis-FranciscoFernandes.git
+cd projeto-GulhermeReis-FranciscoFernandes
+```
+
+### 2. Instalar as dependências (uma vez em cada pasta)
+
+```
+cd server
+npm install
+cd ../client
+npm install
+cd ..
+```
+
+### 3. Arrancar (dois terminais)
+
+Terminal 1, o servidor (fica em http://localhost:3001):
+
+```
+cd server
+node server.js
+```
+
+Terminal 2, o client (abre em http://localhost:5173):
+
+```
+cd client
+npm run dev
+```
+
+Depois é só abrir http://localhost:5173 no browser. O servidor tem de estar ligado para a lista de jogos aparecer.
+
 ## API (contrato)
 
 ### Item
