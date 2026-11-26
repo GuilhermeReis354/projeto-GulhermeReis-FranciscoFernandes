@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Item from './Item.jsx'
 
-const API_URL = 'http://localhost:3000/api/jogos'
+const API_URL = 'http://localhost:3001/api/jogos'
 
 function App() {
   const [jogos, setJogos] = useState([])
@@ -25,12 +25,12 @@ function App() {
     <main>
       <h1>Os nossos videojogos</h1>
 
-      {loading && <p>A carregar...</p>}
+      {loading && <p className="aviso">A carregar...</p>}
 
-      {erro && <p>{erro}</p>}
+      {erro && <p className="aviso erro">{erro}</p>}
 
       {!loading && !erro && (
-        <ul>
+        <ul className="lista">
           {jogos.map((jogo) => (
             <Item key={jogo.id} jogo={jogo} />
           ))}

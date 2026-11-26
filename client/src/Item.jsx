@@ -1,7 +1,10 @@
 function Item({ jogo }) {
   return (
-    <li>
-      <strong>{jogo.name}</strong> — {jogo.platform} — {jogo.hours} horas
+    <li className="item">
+      <strong>{jogo.name}</strong>
+      <span className="detalhes">
+        {jogo.platform} · {jogo.hours} horas
+      </span>
     </li>
   )
 }
