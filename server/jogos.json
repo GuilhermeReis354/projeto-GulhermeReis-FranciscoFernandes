@@ -1,0 +1,7 @@
+[
+  { "id": 1, "name": "Celeste", "platform": "PC", "hours": 40 },
+  { "id": 2, "name": "God of War", "platform": "PlayStation", "hours": 35 },
+  { "id": 3, "name": "Halo Infinite", "platform": "Xbox", "hours": 25 },
+  { "id": 4, "name": "Zelda: Breath of the Wild", "platform": "Switch", "hours": 90 },
+  { "id": 5, "name": "Hades", "platform": "PC", "hours": 60 }
+]
